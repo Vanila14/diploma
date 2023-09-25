@@ -1,0 +1,52 @@
+.header{
+    position: relative;
+
+}
+
+.header__background{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -5;
+    width: 51vw;
+    height: 810px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 0px 10px;
+    background: $general-color
+}
+// ==============================================
+
+
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.nav__list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.nav__list-contact{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav__list-img{
+    position: relative;
+    z-index: 1;
+}
+.nav__list-circle{
+    position: absolute;
+    bottom: -11px;
+    left: -10px;
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #ffffff;
+}
+

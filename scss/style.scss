@@ -1,0 +1,53 @@
+$general-color : #2B7AF1;
+// ===========================================================================
+.body{
+    color: var(--, #111);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.container{
+    max-width: 1280px;
+    // background: #a866f371;
+    margin: 0 auto;
+    padding: 0 0px;
+    height: 100%;
+}
+.button{
+    display: inline-flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #FF7A00 0.2%, #FFB039 99.82%);
+    box-shadow: 0px 10px 20px 0px rgba(255, 122, 0, 0.20);
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    
+}
+.button:hover{
+    background: linear-gradient(90deg, #DD6A00 0.2%, #F99806 99.82%);
+}
+
+
+
+
+
+
+
+// ===========================================================================
+@import "header";
+@import "main";
+@import "footer";
