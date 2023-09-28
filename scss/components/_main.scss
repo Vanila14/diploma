@@ -1,0 +1,49 @@
+.apartments {
+    padding-top: 115px;
+}
+.apartments__general-title {
+    color:#2B7AF1;
+    font-size: 36px;
+    font-weight: 800;
+
+}
+.apartments__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 300PX 300px;
+    gap: 20px;
+    padding-top: 40px;
+    
+    
+    
+}
+.apartments__bloc {
+    
+    background-image: url(../img/flat1.jfif);
+    border-radius: 10px;
+    
+}
+.bloc1{
+    grid-column: 1/3;
+    background-image: url(../img/flat1.jfif);
+}
+.bloc2{
+    background-image: url(../img/flat2.jfif);
+}
+.bloc3{
+    background-image: url(../img/flat3.jfif);
+}
+.bloc4{
+    grid-column: 2/4;
+    background-image: url(../img/flat4.jfif);
+}
+.apartments__info {
+}
+.button--apartments{
+    padding: 8px 20px;
+    font-size: 14px;
+}
+.apartments__title {
+}
+.apartments__subtitle {
+}

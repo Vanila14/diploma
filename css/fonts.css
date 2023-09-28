@@ -41,8 +41,8 @@
 @font-face {
     font-family: 'Montserrat';
     src: local('Montserrat Regular'), local('Montserrat-Regular'),
-        url('Montserrat-Regular.woff2') format('woff2'),
-        url('Montserrat-Regular.woff') format('woff');
+        url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -51,8 +51,8 @@
 @font-face {
     font-family: 'Open Sans';
     src: local('Open Sans Medium'), local('OpenSans-Medium'),
-        url('OpenSans-Medium.woff2') format('woff2'),
-        url('OpenSans-Medium.woff') format('woff');
+        url('../fonts/OpenSans-Medium.woff2') format('woff2'),
+        url('../fonts/OpenSans-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;

@@ -17,10 +17,10 @@ $general-color : #2B7AF1;
 
 }
 .container{
-    max-width: 1280px;
+    max-width: 1310px;
     // background: #a866f371;
     margin: 0 auto;
-    padding: 0 0px;
+    padding: 0 15px;
     height: 100%;
 }
 .button{
@@ -35,19 +35,93 @@ $general-color : #2B7AF1;
     color: #FFF;
     text-align: center;
     font-size: 18px;
+    font-weight: 600;
     
 }
 .button:hover{
     background: linear-gradient(90deg, #DD6A00 0.2%, #F99806 99.82%);
 }
 
-
-
-
-
-
-
 // ===========================================================================
-@import "header";
-@import "main";
-@import "footer";
+@import "./components/header";
+@import "./components/main";
+@import "./components/footer";
+// ===========================================================================
+.body--opened-modal {
+    overflow: hidden;
+}
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background: #00000071;
+    padding: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+}
+.body--opened-modal .modal {
+    opacity: 1;
+    visibility: visible;
+}
+.modal__window {
+    position: relative;
+    width: 450px;
+    height: 450px; 
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px -5px 20px 0px #00000033;
+
+}
+.modal__cancel {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.modal__title {
+    color: #2B7AF1;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 60px;
+
+}
+.modal__text {
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    gap: 10px;
+}
+
+.field__input {
+    width: 313px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    border: 1px solid var(--shadow, rgba(17, 17, 17, 0.50));
+    padding-left: 20px;
+    
+
+}
+.field__input::placeholder{
+    color: var(--shadow, rgba(17, 17, 17, 0.50));
+    font-weight: 400;
+}
+.button--modal {
+    margin-top: 20px;
+}
