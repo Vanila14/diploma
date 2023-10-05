@@ -20,3 +20,32 @@
         }
 
     }
+
+
+    new Swiper('.reviews__swiper', {
+
+        spaceBetween: 20,
+        slidesPerView: 2,
+
+        pagination: {
+            el: '.reviews__pagination',
+            type: 'bullets',
+        },
+
+        navigation: {
+            nextEl: '.reviews__next',
+            prevEl: '.reviews__prev',
+        },
+
+        // breakpoints: {
+        //     601: {
+        //         slidesPerView: 3,
+        //     },
+        //     801: {
+        //         spaceBetween: 32,
+        //     },
+        //     1101: {
+        //         slidesPerView: 4,
+        //     }
+        // }
+    });
