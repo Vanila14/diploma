@@ -25,54 +25,6 @@
 }
 // ==============================================
 
-.nav{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
-}
-.nav__list{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-.nav__text-general{
-    display: block;
-    position: relative;
-}
-.nav__text-general::before{
-    content: "";
-    position: absolute;
-    top: 17px;
-    left: 0px;
-    width: 67px;
-    height: 2px;
-    flex-shrink: 0;
-    border-radius: 2px;
-    background:#111;
-
-}
-
-.nav__list-contact{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.nav__list-img{
-    position: relative;
-    z-index: 1;
-}
-.nav__list-circle{
-    position: absolute;
-    bottom: -11px;
-    left: -10px;
-    z-index: -1;
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 50%;
-    background: #ffffff;
-}
-// ==============================================
 .header__hero{
     display: flex;
     flex-direction: column;

@@ -2,7 +2,7 @@
     padding-top: 115px;
 }
 .apartments__general-title {
-    color:#2B7AF1;
+    color:$general-color;
     font-size: 36px;
     font-weight: 800;
 
@@ -114,7 +114,7 @@
 }
 
 .about-us__title {
-    color:#2B7AF1;
+    color:$general-color;
     font-size: 36px;
     font-weight: 800;
 }
@@ -355,21 +355,26 @@
 
     font-size: 14px;
     font-weight: 500;
-
 }
-
 .reviews__pagination{
     padding: 60px 31.1vw;
 }
 .swiper-pagination-bullet{
     width: 10px;
     height: 10px;
+    opacity: .5;
+    background-color: #ffffff00;
+    border: 2px solid rgb(255, 255, 255);
+    transition: all .2s;
 }
 .swiper-pagination-bullet-active{
     width: 20px;
     height: 10px;
     border-radius: 100px;
     background:linear-gradient(90deg, #FF7A00 0.2%, #FFB039 99.82%);
+    opacity: 1;
+    border:none;
+    transition: all .5s;
 }
 
 

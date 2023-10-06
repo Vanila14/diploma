@@ -1,7 +1,7 @@
 $general-color : #2B7AF1;
 // ===========================================================================
 .body{
-    color: var(--, #111);
+    color:#111;
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
@@ -40,6 +40,75 @@ $general-color : #2B7AF1;
 }
 .button:hover{
     background: linear-gradient(90deg, #DD6A00 0.2%, #F99806 99.82%);
+}
+
+// =========================================================================
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.nav__list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.nav__list-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #2B7AF1;
+    a{
+    font-size: 18px;
+    font-weight: 800;
+    }
+} 
+.nav__text-general{
+    display: block; 
+    position: relative; 
+} 
+.nav__text-general::before{
+    content: ""; 
+    position: absolute; 
+    top: 17px; 
+    left: 0px; 
+    width: 67px; 
+    height: 2px; 
+    flex-shrink: 0; 
+    border-radius: 2px; 
+    background:#111;
+}
+
+.nav__list-contact{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav__list-img{
+    position: relative;
+    z-index: 1;
+}
+.nav__list-circle{
+    position: absolute;
+    bottom: -11px;
+    left: -10px;
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #ffffff;
+}
+.nav__list-cosial{
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 // ===========================================================================
