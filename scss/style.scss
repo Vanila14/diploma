@@ -46,8 +46,12 @@ $general-color : #2B7AF1;
 .nav{
     display: flex;
     justify-content: space-between;
+    
+}
+.nav--header{
     padding-top: 40px;
 }
+
 
 .nav__list{
     display: flex;
@@ -59,7 +63,7 @@ $general-color : #2B7AF1;
     justify-content: center;
     align-items: center;
     width: 150px;
-    height: 60px;
+    height: 50px;
 
     flex-shrink: 0;
     border-radius: 10px;
