@@ -273,20 +273,10 @@
     height: 649px;
     background: #2B7AF1;
 }
-.reviews__next,
-.reviews__prev{
-    cursor: pointer;
-    position: absolute;
-    z-index: 2;
-    top: 475px;
-}
-.reviews__next {
-    right: 184px;
-}
-.reviews__prev {
-    left: 184px;
-}
+.container--reviews{
+    padding: 0 30px 0 ;
 
+}
 .reviews__title {
     padding-top: 100px;
     color: #ffffff;
@@ -294,9 +284,33 @@
     font-weight: 800;
     line-height: 130%;
 }
+.reviews__swiper{
+    position: relative;
+}
+.reviews__next,
+.reviews__prev{
+    cursor: pointer;
+    position: absolute;
+    top: 150px;
+    right: 1px;
+    z-index: 2;
+    
+}
+.reviews__next {
+    right: 1px;
+}
+.reviews__prev {
+    left: 1px;
+}
+
+
+
 .reviews__swiper-wrapper {
     padding-top: 50px;
 }
+
+
+
 .reviews__slide {
     display: grid;
     grid-template-columns:2fr 1fr 2fr;
