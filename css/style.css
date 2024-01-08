@@ -69,6 +69,7 @@
 }
 
 .nav__list {
+  display: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,43 +117,6 @@
       flex-shrink: 0;
   border-radius: 2px;
   background: #111;
-}
-
-.nav__list-mobail {
-  display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 38px;
-}
-
-.nav__list-item {
-  position: relative;
-  cursor: pointer;
-}
-
-.nav_list-burger,
-.nav_list-burger::before,
-.nav_list-burger::after {
-  display: block;
-  width: 30px;
-  height: 3px;
-  border-radius: 100px;
-  background: #000000;
-}
-
-.nav_list-burger::before,
-.nav_list-burger::after {
-  content: "";
-  position: absolute;
-}
-
-.nav_list-burger::before {
-  top: 6px;
-}
-
-.nav_list-burger::after {
-  top: -6px;
 }
 
 .nav__list-contact {
@@ -224,6 +188,129 @@
       flex-shrink: 0;
   border-radius: 0px 0px 0px 10px;
   background: #2B7AF1;
+}
+
+.nav__list-mobail {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 38px;
+}
+
+.nav__list-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav_list-burger,
+.nav_list-burger::before,
+.nav_list-burger::after {
+  display: block;
+  width: 30px;
+  height: 3px;
+  border-radius: 100px;
+  background: #000000;
+  z-index: 4;
+}
+
+.nav_list-burger::before,
+.nav_list-burger::after {
+  content: "";
+  position: absolute;
+}
+
+.nav_list-burger::before {
+  top: 6px;
+}
+
+.nav_list-burger::after {
+  top: -6px;
+}
+
+.nav__mobail-wrapper {
+  display: none;
+}
+
+.body--opened-menu .nav__mobail-wrapper {
+  display: block;
+  position: fixed;
+  z-index: 2;
+  inset: 0px;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.368627451);
+  width: 100vw;
+  height: 100vh;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+}
+.body--opened-menu .nav__mobail-container {
+  width: 0px;
+  height: 100%;
+  background: #2B7AF1;
+  padding-top: 115px;
+  -webkit-animation: viewport 1.5s forwards;
+          animation: viewport 1.5s forwards;
+}
+@-webkit-keyframes viewport {
+  to {
+    width: 40vw;
+  }
+}
+@keyframes viewport {
+  to {
+    width: 40vw;
+  }
+}
+.body--opened-menu .nav__list-mobail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 20px;
+}
+.body--opened-menu .nav_list-burger,
+.body--opened-menu .nav_list-burger::before,
+.body--opened-menu .nav_list-burger::after {
+  display: block;
+  top: 20px;
+  left: -13px;
+}
+.body--opened-menu .nav_list-burger::before {
+  background: #ffffff;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.body--opened-menu .nav_list-burger::after {
+  background: #ffffff;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.body--opened-menu .nav_list-burger {
+  background: transparent;
+}
+.body--opened-menu .nav__list-item-mobai {
+  display: block;
+  position: relative;
+}
+.body--opened-menu .nav__list-item-mobai::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  width: 35vw;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .header__hero-wrapper {
@@ -1230,6 +1317,9 @@
   }
 }
 @media (max-width: 650px) {
+  .header__background {
+    width: 50vw;
+  }
   .maill {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1241,8 +1331,21 @@
   .nav__list-contact .button {
     display: none;
   }
-  .header__background {
-    width: 50vw;
+  .body--opened-menu .nav__mobail-wrapper .nav__list-item-mobai::before {
+    width: 25vw;
+  }
+  .body--opened-menu .nav__mobail-wrapper .nav__mobail-container {
+    width: 0vw;
+  }
+  @-webkit-keyframes viewport {
+    to {
+      width: 45vw;
+    }
+  }
+  @keyframes viewport {
+    to {
+      width: 45vw;
+    }
   }
   .header__hero-wrapper {
     margin-left: 0px;

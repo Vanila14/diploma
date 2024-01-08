@@ -15,6 +15,111 @@
     background: $general-color
 }
 // ==============================================
+.nav__list-mobail {
+    display: none;
+    align-items: center;
+    gap: 38px;
+}   
+.nav__list-item {
+    position: relative;
+    cursor: pointer;
+} 
+.nav_list-burger, 
+.nav_list-burger::before,
+.nav_list-burger::after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    background:#000000;
+    z-index: 4;
+}
+.nav_list-burger::before,
+.nav_list-burger::after{
+    content: '';
+    position: absolute;
+}
+.nav_list-burger::before{
+    top: 6px;
+}
+.nav_list-burger::after{
+    top: -6px;
+} 
+// ==============================================
+
+.nav__mobail-wrapper{
+display: none;
+}
+.body--opened-menu{
+    .nav__mobail-wrapper {
+        display: block;
+        position:fixed;
+        z-index: 2;
+        inset: 0px;
+        backdrop-filter: blur(4px);
+        background-color: #0000005e;
+        width: 100vw;
+        height: 100vh;
+
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .nav__mobail-container{
+        width: 0px;
+        height: 100%;
+        background: #2B7AF1;
+        padding-top: 115px;
+        
+        animation: viewport 1.5s forwards;
+    }
+    @keyframes viewport {
+        to {
+            width: 40vw;
+        }
+    }
+    .nav__list-mobail {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+    .nav_list-burger,
+    .nav_list-burger::before,
+    .nav_list-burger::after{
+        display: block;
+        top: 20px;
+        left: -13px;
+        
+    }
+    .nav_list-burger::before{
+        background: #ffffff;
+        transform: rotate(-45deg);
+    }
+    .nav_list-burger::after{
+        background: #ffffff;
+        transform: rotate(45deg);
+    } 
+    .nav_list-burger{
+        background: transparent;
+        
+    }
+    .nav__list-item-mobai {
+        display: block;
+        position: relative;
+    }
+    .nav__list-item-mobai::before {
+        content: '';
+        position: absolute;
+        top: 30px;
+        width: 35vw;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.20);
+        
+    }
+}
+// ==============================================
 .header__hero-wrapper{
     // max-width: 1500px;
     padding-top: 63px;

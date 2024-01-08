@@ -2,6 +2,7 @@ $general-color : #2B7AF1;
 // ===========================================================================
 .body{
     color:#111;
+    // background: #000000;
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
@@ -52,8 +53,8 @@ $general-color : #2B7AF1;
     padding-top: 40px;
 }
 
-
 .nav__list{
+    display: none;
     display: flex;
     align-items: center;
     gap: 40px;
@@ -89,39 +90,7 @@ $general-color : #2B7AF1;
     background:#111;
 }
 
-
-.nav__list-mobail {
-    display: none;
-    align-items: center;
-    gap: 38px;
-}   
-.nav__list-item {
-    position: relative;
-    cursor: pointer;
-} 
-.nav_list-burger, 
-.nav_list-burger::before,
-.nav_list-burger::after {
-    display: block;
-    width: 30px;
-    height: 3px;
-    border-radius: 100px;
-    background:#000000;
-}
-.nav_list-burger::before,
-.nav_list-burger::after{
-    content: '';
-    position: absolute;
-}
-.nav_list-burger::before{
-    top: 6px;
-}
-.nav_list-burger::after{
-    top: -6px;
-} 
-
-
-
+// ====================
 
 .nav__list-contact{ 
 
@@ -364,6 +333,9 @@ $general-color : #2B7AF1;
     // =========================================================
 }
 @media(max-width: 650px){
+    .header__background{
+        width: 50vw;
+    }
     .maill{
         display: flex;
     }
@@ -375,9 +347,23 @@ $general-color : #2B7AF1;
             display: none;
         }
     }
-    .header__background{
-        width: 50vw;
+    .body--opened-menu{
+        .nav__mobail-wrapper {
+            .nav__list-item-mobai::before{
+                width: 25vw;
+            }
+            .nav__mobail-container{
+                width: 0vw;
+            }
+            @keyframes viewport {
+                to {
+                    width: 45vw;
+                }
+            }
+        }
     }
+        
+        
     .header__hero-wrapper{
         margin-left: 0px;
         justify-content: center;
@@ -401,9 +387,7 @@ $general-color : #2B7AF1;
     .header__cards{
         padding-top: 150px;
     }
-    // =========================================================
-    // =========================================================
-    // =========================================================
+    
 }
 @media(max-width: 430px) {
     .header__background{
