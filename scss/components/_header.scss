@@ -51,7 +51,9 @@
 display: none;
 }
 .body--opened-menu{
+    overflow: hidden;
     .nav__mobail-wrapper {
+        
         display: block;
         position:fixed;
         z-index: 2;

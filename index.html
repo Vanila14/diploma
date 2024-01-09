@@ -156,18 +156,23 @@
                 </div>
             </div>
         </header>
-        <!-- <main class="main">
+
+        <main class="main">
         <section class="apartments">
-            <div class="container">
+            <div class="container container--apartments">
                 <h2 class="apartments__general-title">
                     Наши квартиры
                 </h2>
                 <div class="apartments__grid">
-                    <div class="apartments__bloc bloc1">
+                    <div class="apartments__bloc bloc1"> <!-- блок -->
                         <div class="apartments__filter"></div>
                         <div class="apartments__info">
+                            <img class="apartments__img--mobail" src="img/flat1.jfif" alt="" >
                             <h3 class="apartments__title">
                                 Однокомнатная квартира
+                            </h3>
+                            <h3 class="apartments__title--mobail">
+                                1 комната
                             </h3>
                             <div class="apartments__price">
                                 Сутки: <span class="apartments__money">1 500 ₽</span>
@@ -182,8 +187,12 @@
                     <div class="apartments__bloc bloc2">
                         <div class="apartments__filter"></div>
                         <div class="apartments__info">
+                            <img class="apartments__img--mobail" src="img/flat2.jfif" alt="" >
                             <h3 class="apartments__title">
                                 Трёхкомнатная квартира
+                            </h3>
+                            <h3 class="apartments__title--mobail">
+                                3 комнаты
                             </h3>
                             <div class="apartments__price">
                                 Сутки: <span class="apartments__money">1 300 ₽</span>
@@ -198,11 +207,15 @@
                     <div class="apartments__bloc bloc3">
                         <div class="apartments__filter"></div>
                         <div class="apartments__info">
+                            <img class="apartments__img--mobail" src="img/flat3.jfif" alt="" >
                             <div class="apartments__new">
                                 Новая квартира
                             </div>
                             <h3 class="apartments__title">
                                 Двухкомнатная квартира
+                            </h3>
+                            <h3 class="apartments__title--mobail">
+                                2 комнаты
                             </h3>
                             <div class="apartments__price">
                                 Сутки: <span class="apartments__money">1 700 ₽</span>
@@ -217,8 +230,12 @@
                     <div class="apartments__bloc bloc4">
                         <div class="apartments__filter"></div>
                         <div class="apartments__info">
+                            <img class="apartments__img--mobail" src="img/flat4.jfif" alt="" >
                             <h3 class="apartments__title">
                                 Пятикомнатная квартира
+                            </h3>
+                            <h3 class="apartments__title--mobail">
+                                5 комнат
                             </h3>
                             <div class="apartments__price">
                                 Сутки: <span class="apartments__money">4 1 00 ₽</span>
@@ -240,26 +257,26 @@
                     О нас
                 </h3>
                 <div class="about-us__info">
-                    <div class="about-us__text">
-                        Сегодня «Домашняя гостиница» — одна из крупнейших в Пермском крае гостиничных сетей, динамично
-                        расширяющая географический охват и повышающая качество сервиса.
-                    </div>
                     <div class="about-us__bloc">
-                        <div class="about-us__icon">
+                        <div class="about-us__text">
+                            Сегодня «Домашняя гостиница» — одна из крупнейших в Пермском крае гостиничных сетей, динамично
+                            расширяющая географический охват и повышающая качество сервиса.
+                        </div>
+                        <div class="about-us__icon about-us__icon--1">
                             <img src="img/icon/hands.svg" alt="">
                             <div class="about-us__icon-info">
                                 <p class="about-us__icon-num">40+</p>
                                 <span class="about-us__icon-text">Клиентов</span>
                             </div>
                         </div>
-                        <div class="about-us__icon">
+                        <div class="about-us__icon about-us__icon--2">
                             <img src="img/icon/message.svg" alt="">
                             <div class="about-us__icon-info">
                                 <p class="about-us__icon-num">100+</p>
                                 <span class="about-us__icon-text">Отзывов</span>
                             </div>
                         </div>
-                        <div class="about-us__icon">
+                        <div class="about-us__icon about-us__icon--3">
                             <img src="img/icon/home.svg" alt="">
                             <div class="about-us__icon-info">
                                 <p class="about-us__icon-num">9</p>
@@ -270,7 +287,9 @@
                 </div>
             </div>
         </section>
+
         <div class="line"></div>
+
         <section class="contacts">
             <div class="container">
                 <div class="contacts__bloc">
@@ -302,25 +321,25 @@
                                     <img src="img/icon/circle/vk.svg " alt="">
                                     <p>arendakvartir59</p>
                                 </div>
+                                <button class="button button--contacts">Подписаться</button>
                             </div>
                             <div class="contacts__info-buttons">
                                 <button class="button ">Подписаться</button>
                                 <button class="button ">Подписаться </button>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                     <div class="contacts__img">
-                        <img class="contacts__img-map" src="img/map.svg" alt="">
                         <img class="contacts__img-bg" src="img/Map.png" alt="">
                     </div>
                 </div> 
             </div>    
         </section>
-        <section class="reviews">
+
+        <!-- <section class="reviews">
             <div class="reviews__background">
                 <img class="reviews__background-img" src="img/icon/comma big.svg" alt="">
             </div>
-
             <div class="container container--reviews ">
                 <h3 class="reviews__title">Отзывы клиентов </h3>
                 <div class="reviews__swiper  swiper">
@@ -441,9 +460,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer class="footer">
+
+    <!-- <footer class="footer">
         <div class="footer__filter"></div>
         <img  class="footer__background" src="img/footer_img.jfif" alt="">
         
@@ -558,6 +578,7 @@
 
         </div>
     </footer>  -->
+
         <div class="modal">
             <div class="modal__window">
                 <a class="modal__cancel" href="#">

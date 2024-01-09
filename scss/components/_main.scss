@@ -1,6 +1,10 @@
 .apartments {
     padding-top: 115px;
 }
+.container--apartments{
+    display: flex;
+    flex-direction: column;
+}
 .apartments__general-title {
     color:$general-color;
     font-size: 36px;
@@ -13,9 +17,6 @@
     grid-template-rows: 300PX 300px;
     gap: 20px;
     padding-top: 40px;
-    
-    
-    
 }
 
 .apartments__bloc {
@@ -40,6 +41,10 @@
     background: #11111180;
     border-radius: 10px;
 }
+.apartments__img--mobail,
+.apartments__title--mobail{
+    display: none;
+}
 
 .bloc1{
     grid-column: 1/3;
@@ -53,6 +58,7 @@
 .bloc3{
     background-image: url(../img/flat3.jfif);
     background-position: 0% 90%;
+    
     
 }
 .bloc4{
@@ -71,7 +77,7 @@
     background: #5CB85C;
     text-align: center;
     font-size: 12px;
-    margin-bottom: 65px;
+    margin-bottom: 2.7vw;
 }
 .button--apartments{
     padding: 8px 20px;
@@ -102,7 +108,7 @@
     font-weight: 400;
 }
 .button--apart-down{
-    margin: 75px 25vw 0px;
+    margin: 75px auto 0px;
     padding: 15px 50px;
     font-size: 16px;
 
@@ -119,8 +125,6 @@
     font-weight: 800;
 }
 .about-us__info {
-    display: flex;
-    justify-content: space-between;
     padding-top: 40px;
 
 }
@@ -129,16 +133,20 @@
     font-family: Open Sans;
     font-size: 18px;
     font-weight: 400;
-
 }
 .about-us__bloc {
-    display: flex;
-    align-items: center;
-    gap: 100px;
-
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr 1fr;
+    grid-template-rows:repeat(1, 1fr) ;
+    gap: 99px;
+    
+    
 }
 .about-us__icon {
+    width: 100%;
+    height: 100%;
     display: flex;
+    align-items: center;
     gap:20px;
     
 }
@@ -161,7 +169,7 @@
 
 .line{
     margin: 0px auto;
-    width: 1280px;
+    max-width: 1280px;
     height: 1px;
     flex-shrink: 0;
     border-radius: 1px;
@@ -174,7 +182,6 @@
 .contacts__bloc {
     display: flex;
     justify-content: space-between;
-
 }
 .contacts__info {
     display: flex;
@@ -189,7 +196,6 @@
         padding-bottom: 50px;
     }
 }
-
 .contacts__info-bloc-app {
     display: flex;
     flex-direction: column;
@@ -200,14 +206,11 @@
     display: flex;
     align-items: center;
     gap: 20px;
-
     p{
         font-size: 18px;
         font-weight: 400;
     }
 }
-
-
 .contacts__info-down {
     display: flex;
     gap: 123px;
@@ -226,34 +229,31 @@
     gap: 20px;
     align-items: center;
 }
+.button--contacts{
+    display: none;
+}
 .contacts__info-buttons {
     display: flex;
     flex-direction: column;
     gap: 21.6px;
-
     .button{
         width: 157px;
         padding: 8px 20px;
+        margin-right: 10px;
         font-size: 14px;
     }
 }
 .contacts__img{
-    position: relative;
+    // background-color:  #FF7A00;
     width: 758px;
     height: 429px;
-    flex-shrink: 0;
-    .contacts__img-map{
-        position: absolute;
-        left: 210px;
-        top: 89px;
-    }
+    flex-shrink: 1;
 .contacts__img-bg{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0px 10px 20px 0px rgba(17, 17, 17, 0.10);
-
+    box-shadow: 0px 10px 20px 0px rgba(17, 17, 17, 0.10); 
     }   
 }
 // ======================================================================================
@@ -303,19 +303,13 @@
     left: 1px;
 }
 
-
-
 .reviews__swiper-wrapper {
     padding-top: 50px;
 }
-
-
-
 .reviews__slide {
     display: grid;
     grid-template-columns:2fr 1fr 2fr;
     grid-template-rows:1fr 1fr 1fr ;
-
     padding: 40px;
     transition: .9s;
     width: 630px;
@@ -328,7 +322,6 @@
     color:#2B7AF1;
     font-size: 20px;
     font-weight: 700;
-
 }
 .reviews__slide-icon {
     justify-self: end;
@@ -338,7 +331,6 @@
 .reviews__slide-subtitle {
     grid-column: 1/4 ;
     grid-row: 2/3;
-
     font-family: Open Sans;
     font-weight: 400;
 
