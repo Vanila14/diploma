@@ -27,12 +27,14 @@
 .nav__list-item--burger{
     position: relative;
     cursor: pointer;
-    width: 55px;
+    width: 50px;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: palevioletred;
+
 }
 .nav_list-burger, 
 .nav_list-burger::before,
@@ -53,7 +55,7 @@
     top: 7px;
 }
 .nav_list-burger::after{
-    bottom: 8px;
+    bottom: 7px;
 } 
 // ==============================================
 
@@ -98,7 +100,7 @@ display: none;
         padding-left: 20px;
     }
     .nav__list-item--burger{
-        width: 35px;
+        width: 30px;
     }
     .nav_list-burger,
     .nav_list-burger::before,
