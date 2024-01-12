@@ -21,27 +21,27 @@
                 <div class="nav nav--header">
                     <ul class="nav__list">
                         <li class="nav__list-general-item">
-                            <a href="#">
+                            <a href="/">
                                 <img src="img/icon/logo.svg" alt="">
                             </a>
                         </li>
                         <li class=" nav__list-general-item nav__text-general">
-                            <a href="#">
+                            <a href="/">
                                 Главная
                             </a>
                         </li>
                         <li class="nav__list-general-item">
-                            <a href="#">
+                            <a href="#apartments">
                                 Квартиры
                             </a>
                         </li>
                         <li class="nav__list-general-item">
-                            <a href="#">
+                            <a href="#contacts">
                                 Контакты
                             </a>
                         </li>
                         <li class="nav__list-general-item">
-                            <a href="#">
+                            <a href="#about-us">
                                 О нас
                             </a>
                         </li>
@@ -51,12 +51,12 @@
                             <a class="nav_list-burger" href="#"></a>
                         </li>
                         <li class="nav__list-item">
-                            <img src="img/icon/logo mobail.svg" alt="">
+                            <img src="img/icon/logo-mobail.svg" alt="">
                         </li>
                     </ul>
                     <ul class="nav__list-contact">
                         <li class="nav__list-img maill">
-                            <img src="img/icon/email blue.svg" alt="">
+                            <img src="img/icon/email-blue.svg" alt="">
                             <div class="nav__list-circle"></div>
                         </li>
                         <li class="nav__list-mail">
@@ -65,7 +65,7 @@
                             </a>
                         </li>
                         <li class="nav__list-img">
-                            <img src="img/icon/Phone blue.svg" alt="">
+                            <img src="img/icon/Phone-blue.svg" alt="">
                             <div class="nav__list-circle"></div>
                         </li>
                         <li class="nav__list-tell">
@@ -73,34 +73,34 @@
                                 +7 (919) 714-25-00
                             </a>
                         </li>
-                        <div class="button">
+                        <button class="button">
                             <a class="button__link" href="#">
                                 Заказать звонок
                             </a>
-                        </div>
+                        </button>
                     </ul>
                 </div>
-            </div> <!--container -->
-            <div class="nav__mobail-wrapper">
+            </div> 
+            <div class="nav__mobail-wrapper"> 
                 <div class="nav__mobail-container">
                     <ul class="nav__list-mobail">
                         <li class=" nav__list-item-mobai">
-                            <a href="#">
+                            <a href="/">
                                 Главная
                             </a>
                         </li>
                         <li class="nav__list-item-mobai">
-                            <a href="#">
+                            <a href="#apartments">
                                 Квартиры
                             </a>
                         </li>
                         <li class="nav__list-item-mobai">
-                            <a href="#">
+                            <a href="#contacts">
                                 Контакты
                             </a>
                         </li>
                         <li class="nav__list-item-mobai">
-                            <a href="#">
+                            <a href="#about-us">
                                 О нас
                             </a>
                         </li>
@@ -115,8 +115,8 @@
                     <p class="header__hero-subtitle">
                         На длительный срок или посуточно
                     </p>
-                    <button class="button button--header ">
-                        Смотреть варианты
+                    <button  class="button button--header ">
+                        <a href="#apartments">Смотреть варианты</a>
                     </button>
                 </div>
                 <div class="header__hero-img">
@@ -158,13 +158,13 @@
         </header>
 
         <main class="main">
-        <section class="apartments">
+        <section class="apartments" id="apartments">
             <div class="container container--apartments">
                 <h2 class="apartments__general-title">
                     Наши квартиры
                 </h2>
                 <div class="apartments__grid">
-                    <div class="apartments__bloc bloc1"> <!-- блок -->
+                    <div class="apartments__bloc bloc1"> 
                         <div class="apartments__filter"></div>
                         <div class="apartments__info">
                             <img class="apartments__img--mobail" src="img/flat1.jfif" alt="" >
@@ -251,7 +251,7 @@
                 <button class="button button--apart-down">Смотреть все квартиры</button>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <div class="container">
                 <h3 class="about-us__title">
                     О нас
@@ -290,7 +290,7 @@
 
         <div class="line"></div>
 
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container">
                 <div class="contacts__bloc">
                     <div class="contacts__info">
@@ -336,20 +336,23 @@
             </div>    
         </section>
 
-        <!-- <section class="reviews">
+        <section class="reviews">
             <div class="reviews__background">
-                <img class="reviews__background-img" src="img/icon/comma big.svg" alt="">
+                <img class="reviews__background-img" src="img/icon/comma-big.svg" alt="">
             </div>
             <div class="container container--reviews ">
                 <h3 class="reviews__title">Отзывы клиентов </h3>
-                <div class="reviews__swiper  swiper">
+                <div class="reviews__wrapper">
                     <div class=" reviews__prev ">
                         <img src="img/icon/left.svg" alt="">
                     </div>
                     <div class=" reviews__next ">
                         <img src="img/icon/right.svg" alt="">
                     </div> 
+                </div>
+                <div class="reviews__swiper  swiper">
                     <div class=" reviews__swiper-wrapper swiper-wrapper">
+                        
                         <div class=" reviews__slide  swiper-slide">
                             <div class="reviews__slide-title">
                                 Уютная квартира
@@ -392,6 +395,7 @@
                                 15 сентября 2019
                             </div> 
                         </div>
+
                         <div class=" reviews__slide  swiper-slide">
                             <div class="reviews__slide-title">
                                 Уютная квартира
@@ -434,6 +438,7 @@
                                 15 сентября 2019
                             </div> 
                         </div>
+
                         <div class=" reviews__slide  swiper-slide">
                             <div class="reviews__slide-title">
                                 Уютная квартира
@@ -460,10 +465,11 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
+        
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer__filter"></div>
         <img  class="footer__background" src="img/footer_img.jfif" alt="">
         
@@ -483,8 +489,7 @@
                     </form>
                 </div>
                 <div class="footer__info">
-                    
-                    <img src="img/icon/comma sm.svg" alt="">
+                    <img src="img/icon/comma-sm.svg" alt="">
                     <div class="footer__info-text">
                         Дорогой гость, если у тебя есть какие-то пожелания или притензии 
                         по&nbsp;улучшению качества обслуживания или просто хочешь оставить свой
@@ -504,40 +509,49 @@
             <div class="nav nav--footer ">
                 <ul class="nav__list">
                     <li class="nav__list-logo">
-                        <a  href="#">
+                        <a  href="/">
                             Логотип
                         </a>
                     </li>
                     <li class="nav__text-general nav__text-general--footer ">
-                        <a href="#">
+                        <a href="/">
                             Главная
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#apartments">
                             Квартиры
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#contacts">
                             Контакты
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#about-us">
                             О нас
                         </a>
                     </li>
                 </ul>
-                <ul class="nav__list-contact">
-                    <li class="nav__list-contact-mail"   >
-                        <img src="img/icon/circle/mail.svg" alt="">
+                <ul class="nav__list-mobail">
+                    <li class="nav__list-item nav__list-item--footer">
+                        <img src="img/icon/logo-mobail.svg" alt="">
+                    </li>
+                </ul>
+                <ul class="nav__list-contact nav__list-contact--footer ">
+                    <li class="nav__list-img  maill">
+                        <img class="nav__list-img--footer" src="img/icon/circle/mail.svg" alt="">
+                    </li>
+                    <li class="nav__list-mail">
                         <a href="#">
                             mail@yandex.ru
                         </a>
                     </li>
-                    <li class="nav__list-contact-tell">
-                        <img  src="img/icon/circle/phone.svg" alt="">
+                    <li class="nav__list-img">
+                        <img class="nav__list-img--footer" src="img/icon/circle/phone.svg" alt="">
+                    </li>
+                    <li class="nav__list-tell">
                         <a href="#">
                             +7 (919) 714-25-00
                         </a>
@@ -546,22 +560,26 @@
                 <ul class="nav__list-cosial">
                     <li>
                         <a href="">
-                            <img src="img/icon/circle/telegramm.svg" alt="">
+                            <img class="nav__list-cosial-item" src="img/icon/circle/telegramm.svg" alt="">
+                            <img class="nav__list-cosial--mini" src="img/icon/circle/telegramm-mini.svg" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="img/icon/circle/facebook.svg" alt="">
+                            <img class="nav__list-cosial-item" src="img/icon/circle/facebook.svg" alt="">
+                            <img class="nav__list-cosial--mini" src="img/icon/circle/facebook-mini.svg" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="img/icon/circle/vk.svg" alt="">
+                            <img class="nav__list-cosial-item" src="img/icon/circle/vk.svg" alt="">
+                            <img class="nav__list-cosial--mini" src="img/icon/circle/vk-mimi.svg" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="img/icon/circle/instagramm.svg" alt="">
+                            <img class="nav__list-cosial-item" src="img/icon/circle/instagramm.svg" alt="">
+                            <img class="nav__list-cosial--mini" src="img/icon/circle/instagramm-mini.svg" alt="">
                         </a>
                     </li>
                 </ul>
@@ -575,9 +593,9 @@
                     Пользовательское соглашение
                 </span>
             </div>
-
         </div>
-    </footer>  -->
+        <div class="footer-mobail"></div>
+    </footer> 
 
         <div class="modal">
             <div class="modal__window">

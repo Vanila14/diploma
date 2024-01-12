@@ -60,8 +60,8 @@ display: none;
         inset: 0px;
         backdrop-filter: blur(4px);
         background-color: #0000005e;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
 
         color: #ffffff;
         font-family: Montserrat;
@@ -71,7 +71,7 @@ display: none;
     .nav__mobail-container{
         width: 0px;
         height: 100%;
-        background: #2B7AF1;
+        background: $general-color;
         padding-top: 115px;
         
         animation: viewport 1.5s forwards;

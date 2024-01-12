@@ -1,5 +1,8 @@
 $general-color : #2B7AF1;
 // ===========================================================================
+html{
+    scroll-behavior: smooth;
+}
 .body{
     color:#111;
     // background: #000000;
@@ -68,7 +71,7 @@ $general-color : #2B7AF1;
 
     flex-shrink: 0;
     border-radius: 10px;
-    background: #2B7AF1;
+    background: $general-color;
     a{
     font-size: 18px;
     font-weight: 800;
@@ -132,6 +135,9 @@ $general-color : #2B7AF1;
     gap: 10px;
     align-items: center;
 }
+.nav__list-cosial--mini{
+    display: none
+}
 
 // ===========================================================================
 @import "./components/header";
@@ -173,7 +179,7 @@ $general-color : #2B7AF1;
     right: 15px;
 }
 .modal__title {
-    color: #2B7AF1;
+    color: $general-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -254,6 +260,7 @@ $general-color : #2B7AF1;
     // =========================================================
     .about-us {
         padding-top: 10vw;
+        padding-bottom: 73px;
     }
     .about-us__title {
         font-size: 24px;
@@ -286,7 +293,7 @@ $general-color : #2B7AF1;
     .contacts__info-title{
         padding-bottom: 20px;
         font-size: 24px;
-        color: #00ff1a;
+        color:$general-color;
     }
     .contacts__info-bloc-line-app,
     .contacts__info-bloc-line-down{
@@ -310,9 +317,101 @@ $general-color : #2B7AF1;
     .contacts__info-buttons {
         display: none;
     }
+     // =========================================================
+    .reviews{
+        padding-top: 100px;
+    }
+    .reviews__background {
+        height: 324px;
+        padding: 20px;
+    }
+    .reviews__background-img {
+        width: 70.689px;
+        height: 69.609px;
+    }
+    .reviews__title {
+        padding-top: 50px;
+        font-size: 24px;
+    }
+    .reviews__next,
+    .reviews__prev{
+    top: 75px;
+    img{
+        width: 60px;
+        height: 60px;
+    }
+    }
+    .reviews__prev {
+        left: -37px;
+    }
+    .reviews__next {
+        right:-37px;
+    }
+    .reviews__swiper-wrapper {
+        padding-top: 20px;
+    }
+    .reviews__slide {
+        height: 175px;
+        padding: 10px;
+    }
+    .reviews__slide-title {
+        font-size: 14px;
+    }
+    .reviews__slide-subtitle {
+        font-size: 12px;
+    }
+    .reviews__slide-name {
+        font-size: 10px;
+    }
+    .reviews__slide-city,
+    .reviews__slide-date{
+        font-size: 8px;
+    }
+    .reviews__pagination {
+        padding-top: 20px;
+    }
+    // =========================================================
+    // =========================================================
+    // =========================================================
+    .footer{
+        padding-top: 90px;
+    }
+    .footer__wrapper{
+        gap: 1vw;
+        align-items: center;
+    }
+    .footer__window-title{
+        font-size: 24px;
+    }
+    .footer__window-input::placeholder {
+        font-size: 12px;
+    }
+    .footer__window-button {
+        font-size: 14px;
+    }
+    .footer__info-text,
+    .footer__info-name{
+        font-size: 14px;
+        h5{
+            font-size: 14px;
+        }
+        span{
+            font-size: 14px;
+        }
+    }
+
+    .nav--footer{
+        margin-top: 305px;
+    }
+    .footer__Copyright{
+        flex-direction: column;
+        gap: 2.5vw;
+        align-items: center;
+    }
+
+
 
 }
-
 @media (max-width: 930px){
     .nav__list-img{
         img{
@@ -432,6 +531,13 @@ $general-color : #2B7AF1;
         display: none;
     }
     // =========================================================
+    // =========================================================
+    // =========================================================
+    .nav__list-img{
+        .nav__list-img--footer{
+            width: 40px;
+        }
+    }
 
 
 }
@@ -483,6 +589,9 @@ $general-color : #2B7AF1;
         padding: 6px 4vw;
     }
     // =========================================================
+    .about-us{
+        padding-bottom: 50px;
+    }
     .about-us__bloc {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
@@ -498,6 +607,20 @@ $general-color : #2B7AF1;
         grid-column: 2/1;
     }
     // =========================================================
+    // =========================================================
+    // =========================================================
+    .footer__wrapper{
+        gap: 0px;
+        justify-content: center;
+    }
+    .footer__window{
+        width: 90%;
+
+    }
+
+    .footer__info{
+        display: none;
+    }
 
 }
 @media(max-width: 650px){
@@ -556,10 +679,32 @@ $general-color : #2B7AF1;
     // =========================================================
     // =========================================================
     // =========================================================
+    .footer__filter,
+    .footer__background,
+    .nav__list-contact--footer,
+    .nav__list-cosial-item,
+    .footer__Copyright{
+        display: none;
+    }
+    .nav--footer{
+        margin-top: 100px;
+
+    }
+    .nav__list-mobail{
+        background-color: #ffffff;
+        padding: 9px 13px 4px 13px;
+        border-radius: 5px;
+    }
+    .nav__list-cosial--mini{
+        display: inline-block;
+    }
+    .footer-mobail{
+        background: $general-color;
+    }
 
 
 }
-@media(max-width: 430px) {
+@media(max-width: 430px){
     .header__background{
         width: 40vw;
     }
@@ -590,7 +735,6 @@ $general-color : #2B7AF1;
                 display: block;
             }
         }
-
         .header__cards-icon {
             width: 100px;
             height:100px;
@@ -628,8 +772,6 @@ $general-color : #2B7AF1;
         grid-template-columns: 4/1;
     }
     // =========================================================
-    .contacts {
-    }
     .contacts__bloc {
         flex-direction: column;
         gap: 30px;
@@ -639,8 +781,8 @@ $general-color : #2B7AF1;
     }
     .contacts__info-title {
         font-size: 24px;
-        padding-bottom: 0px;
-        color: #DD6A00;
+        padding-bottom: 20px;
+        color: $general-color;
     }
     .contacts__info-bloc-down {
         flex-direction: row;
@@ -657,6 +799,32 @@ $general-color : #2B7AF1;
         width: 100%;
         height: 200px;
     }
-    .contacts__img-bg {
+    // =========================================================
+    .reviews__title{
+        font-size: 20px;
     }
+    .reviews__slide {
+        
+    }
+    .swiper-slide {
+    }
+    .reviews__slide-title {
+        font-size: 12px;
+    }
+    .reviews__slide-icon {
+        width: 80px;
+    }
+    .reviews__slide-subtitle {
+        font-size: 10px;
+    }
+    .reviews__slide-info {
+        grid-column: 1/3;
+    }
+    .reviews__slide-name {
+    }
+    .reviews__slide-city {
+    }
+    .reviews__slide-date {
+    }
+
 }

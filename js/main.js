@@ -45,7 +45,7 @@
     new Swiper('.reviews__swiper', {
 
         spaceBetween: 20,
-        slidesPerView: 2,
+        slidesPerView: 1,
 
         pagination: {
             el: '.reviews__pagination',
@@ -57,15 +57,10 @@
             prevEl: '.reviews__prev',
         },
 
-        // breakpoints: {
-        //     601: {
-        //         slidesPerView: 3,
-        //     },
-        //     801: {
-        //         spaceBetween: 32,
-        //     },
-        //     1101: {
-        //         slidesPerView: 4,
-        //     }
-        // }
+        breakpoints: {
+            790: {
+                slidesPerView: 2,
+            },
+            
+        }
     });
