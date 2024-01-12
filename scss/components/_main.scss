@@ -293,13 +293,17 @@
     position: absolute;
     top: 155px;
     z-index: 4;
+    img{
+        width: 40px;
+        height: 40px;
+    }
     
 }
 .reviews__next {
-    right:-40px;
+    right:-21px;
 }
 .reviews__prev {
-    left: -40px;
+    left: -21px;
 }
 
 .reviews__swiper-wrapper {

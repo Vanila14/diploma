@@ -833,13 +833,18 @@ html {
   top: 155px;
   z-index: 4;
 }
+.reviews__next img,
+.reviews__prev img {
+  width: 40px;
+  height: 40px;
+}
 
 .reviews__next {
-  right: -40px;
+  right: -21px;
 }
 
 .reviews__prev {
-  left: -40px;
+  left: -21px;
 }
 
 .reviews__swiper-wrapper {
@@ -1364,18 +1369,18 @@ html {
   }
   .reviews__next,
   .reviews__prev {
-    top: 75px;
+    top: 85px;
   }
   .reviews__next img,
   .reviews__prev img {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
   }
   .reviews__prev {
-    left: -37px;
+    left: -24px;
   }
   .reviews__next {
-    right: -37px;
+    right: -20px;
   }
   .reviews__swiper-wrapper {
     padding-top: 20px;
