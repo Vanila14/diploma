@@ -2,6 +2,7 @@ $general-color : #2B7AF1;
 // ===========================================================================
 html{
     scroll-behavior: smooth;
+    overflow-x:hidden; 
 }
 .body{
     color:#111;
@@ -803,11 +804,6 @@ html{
     .reviews__title{
         font-size: 20px;
     }
-    .reviews__slide {
-        
-    }
-    .swiper-slide {
-    }
     .reviews__slide-title {
         font-size: 12px;
     }
@@ -819,12 +815,6 @@ html{
     }
     .reviews__slide-info {
         grid-column: 1/3;
-    }
-    .reviews__slide-name {
-    }
-    .reviews__slide-city {
-    }
-    .reviews__slide-date {
     }
 
 }
