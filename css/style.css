@@ -188,6 +188,26 @@ html {
   cursor: pointer;
 }
 
+.nav__list-item--burger {
+  position: relative;
+  cursor: pointer;
+  width: 55px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .nav_list-burger,
 .nav_list-burger::before,
 .nav_list-burger::after {
@@ -196,7 +216,6 @@ html {
   height: 3px;
   border-radius: 100px;
   background: #000000;
-  z-index: 4;
 }
 
 .nav_list-burger::before,
@@ -206,11 +225,11 @@ html {
 }
 
 .nav_list-burger::before {
-  top: 6px;
+  top: 7px;
 }
 
 .nav_list-burger::after {
-  top: -6px;
+  bottom: 8px;
 }
 
 .nav__mobail-wrapper {
@@ -266,12 +285,15 @@ html {
           align-items: flex-start;
   padding-left: 20px;
 }
+.body--opened-menu .nav__list-item--burger {
+  width: 35px;
+}
 .body--opened-menu .nav_list-burger,
 .body--opened-menu .nav_list-burger::before,
 .body--opened-menu .nav_list-burger::after {
   display: block;
-  top: 20px;
-  left: -13px;
+  top: 13px;
+  left: 0px;
 }
 .body--opened-menu .nav_list-burger::before {
   background: #ffffff;

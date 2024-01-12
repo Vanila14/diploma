@@ -24,6 +24,16 @@
     position: relative;
     cursor: pointer;
 } 
+.nav__list-item--burger{
+    position: relative;
+    cursor: pointer;
+    width: 55px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .nav_list-burger, 
 .nav_list-burger::before,
 .nav_list-burger::after {
@@ -32,7 +42,7 @@
     height: 3px;
     border-radius: 100px;
     background:#000000;
-    z-index: 4;
+    
 }
 .nav_list-burger::before,
 .nav_list-burger::after{
@@ -40,10 +50,10 @@
     position: absolute;
 }
 .nav_list-burger::before{
-    top: 6px;
+    top: 7px;
 }
 .nav_list-burger::after{
-    top: -6px;
+    bottom: 8px;
 } 
 // ==============================================
 
@@ -87,12 +97,15 @@ display: none;
         align-items: flex-start;
         padding-left: 20px;
     }
+    .nav__list-item--burger{
+        width: 35px;
+    }
     .nav_list-burger,
     .nav_list-burger::before,
     .nav_list-burger::after{
         display: block;
-        top: 20px;
-        left: -13px;
+        top: 13px;
+        left: 0px;
         
     }
     .nav_list-burger::before{
