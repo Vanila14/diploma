@@ -110,26 +110,7 @@ html{
     position: relative;
     z-index: 1;
 }      
-.nav__list-circle{
-    position: absolute;
-    bottom: -11px;
-    left: -10px;
-    z-index: -1;
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 50%;
-    background: #ffffff;
-}
 
-
-.nav__list-contact-mail,
-.nav__list-contact-tell{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-
-} 
 
 .nav__list-cosial{
     display: flex;
@@ -232,6 +213,7 @@ html{
     .nav--header{
         padding-top: 15px;
     }
+
     .header__background{
         width: 70vw;
         height: 509px;
@@ -409,23 +391,16 @@ html{
         gap: 2.5vw;
         align-items: center;
     }
-
-
-
 }
 @media (max-width: 930px){
     .nav__list-img{
         img{
-            width: 15px;
+            width: 30px;
         }
     }
-    .nav__list-circle{
-        bottom: -6px;
-        left: -8px;
-        width: 30px;
-        height: 30px;
-    }
+
     .nav__list-contact{
+        gap: 14px;
         .button{
             width: 145px;
             height: 30px;
@@ -684,14 +659,15 @@ html{
     .footer__background,
     .nav__list-contact--footer,
     .nav__list-cosial-item,
+    .line-footer,
     .footer__Copyright{
         display: none;
     }
     .nav--footer{
         margin-top: 100px;
-
+        margin-bottom: 10px;
     }
-    .nav__list-mobail{
+    .nav__list-mobail--footer{
         background-color: #ffffff;
         padding: 9px 13px 4px 13px;
         border-radius: 5px;
